@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewCurrentPhase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Ready to Exercise!!!"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewTimeRemaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0s"
+        android:textAlignment="center"
+        android:textSize="96sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBarPhaseProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonStartTimer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#10704e"
+        android:text="Start Timer" />
+
+    <Button
+        android:id="@+id/buttonStopTimer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E13D3D"
+        android:text="Stop Timer" />
+
+
+    <TextView
+        android:id="@+id/textViewWorkoutDurationLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Workout Duration" />
+
+    <EditText
+        android:id="@+id/editTextWorkoutDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewRestDurationLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rest Duration" />
+
+    <EditText
+        android:id="@+id/editTextRestDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+
+</LinearLayout>
